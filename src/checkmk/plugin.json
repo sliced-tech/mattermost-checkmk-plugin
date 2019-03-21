@@ -1,0 +1,35 @@
+{
+  "id": "au.com.slicedtech.chat.checkmk",
+  "name": "Check MK",
+  "server": {
+    "executables": {
+      "linux-amd64": "plugin"
+    }
+  },
+  "settings_schema": {
+    "header": "Settings for the Check_MK Plugin",
+    "footer": "",
+    "settings": [{
+      "key": "CmkBaseUrl",
+      "display_name": "Check_MK Base URL",
+      "type": "text",
+      "help_text": "Your Check_MK Base URL, example: http://checkmk.url.com.au/sitename/check_mk",
+      "placeholder": "Check_MK URL",
+      "default": "http://1.1.1.1/site/check_mk"
+    }, {
+      "key": "CmkUsername",
+      "display_name": "Check_MK Username",
+      "type": "text",
+      "help_text": "The user which will interact with check_MK to send the acknowledge messages (Usually a API User)",
+      "placeholder": "Check_MK Username",
+      "default": ""
+    }, {
+      "key": "CmkSecret",
+      "display_name": "Check_MK User Secret",
+      "type": "text",
+      "help_text": "The Secret for the Check_MK User, used to send the acknowledge messages",
+      "placeholder": "Check_MK Secret",
+      "default": ""
+    }
+  ]}
+}
